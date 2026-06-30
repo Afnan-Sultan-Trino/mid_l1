@@ -1,0 +1,62 @@
+*{
+    box-sizing:border-box;
+}
+ 
+body{
+    margin:20px;
+    
+}
+ 
+h1{
+    margin:0 0 20px 0;
+    font-size:32px;
+}
+ 
+.container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    align-items:start;
+}
+ 
+fieldset{
+    padding:15px;
+}
+ 
+.form-group{
+    display:grid;
+    grid-template-columns:140px 15px 1fr;
+    align-items:start;
+    margin-bottom:12px;
+}
+ 
+.radio-group{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+ 
+.address{
+    border:1px solid gray;
+    padding:10px;
+}
+ 
+.address select,
+.address textarea,
+.address input{
+    width:100%;
+    margin-top:8px;
+}
+ 
+input[type=text],
+input[type=password],
+input[type=email],
+select,
+textarea{
+    width:100%;
+}
+ 
+.button{
+    text-align:center;
+    margin-top:20px;
+}
