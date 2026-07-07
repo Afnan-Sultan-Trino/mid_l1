@@ -1,184 +1,203 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Registration</title>
+<html lang="en">
  
-<link rel="stylesheet"href="style.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+ 
+<link rel="stylesheet" href="style.css">
  
 </head>
  
 <body>
  
-<h1><b>Registration</b></h1>
+<h1>Registration Form</h1>
  
 <div class="container">
  
-    <fieldset>
+<!-- General Information -->
  
-        <legend>General Information:</legend>
+<fieldset class="general">
  
-        <div class="form-group">
-            <label><b>First Name</b></label>
-            <span>:</span>
-            <input type="text">
-        </div>
+<legend>General Information:</legend>
  
-        <div class="form-group">
-            <label><b>Last Name</b></label>
-            <span>:</span>
-            <input type="text">
-        </div>
+<table>
  
-        <div class="form-group">
-            <label><b>Gender</b></label>
-            <span>:</span>
+<tr>
+<td><b>First Name</b></td>
+<td>:</td>
+<td><input type="text"></td>
+</tr>
  
-            <div class="radio-group">
-                <label><input type="radio" name="gender">Male</label>
-                <label><input type="radio" name="gender">Female</label>
-            </div>
-        </div>
+<tr>
+<td><b>Last Name</b></td>
+<td>:</td>
+<td><input type="text"></td>
+</tr>
  
-        <div class="form-group">
-            <label><b>Father's Name</b></label>
-            <span>:</span>
+<tr>
+<td><b>Gender</b></td>
+<td>:</td>
+<td>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+</td>
+</tr>
  
-            <div>
-                <input type="text"><br><br>
-                <input type="file">
-            </div>
-        </div>
+<tr>
+<td><b>Father's Name</b></td>
+<td>:</td>
+<td><input type="text"></td>
+<td style="border: 2px solid rgb(153, 149, 149);">
+<input type="file">
+</td>
+</tr>
  
-        <div class="form-group">
-            <label><b>Mother's Name</b></label>
-            <span>:</span>
-            <input type="text">
-        </div>
+
  
-        <div class="form-group">
-            <label><b>Blood Group</b></label>
-            <span>:</span>
+<tr>
+<td><b>Mother's Name</b></td>
+<td>:</td>
+<td><input type="text"></td>
+</tr>
  
-            <select>
-                <option>A+</option>
-                <option>A-</option>
-                <option>B+</option>
-                <option>B-</option>
-                <option>AB+</option>
-                <option>AB-</option>
-                <option>O+</option>
-                <option>O-</option>
-            </select>
-        </div>
+<tr>
+<td><b>Blood Group</b></td>
+<td>:</td>
+<td>
+<select>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+</select>
+</td>
+</tr>
  
-        <div class="form-group">
-            <label><b>Religion</b></label>
-            <span>:</span>
+<tr>
+<td><b>Religion</b></td>
+<td>:</td>
+<td>
+<select>
+<option>Islam</option>
+<option>Hindu</option>
+<option>Christian</option>
+<option>Buddhist</option>
+</select>
+</td>
+</tr>
  
-            <select>
-                <option>Islam</option>
-                <option>Hinduism</option>
-                <option>Christianity</option>
-                <option>Buddhism</option>
-            </select>
-        </div>
+</table>
  
-    </fieldset>
+</fieldset>
  
-    <fieldset>
+<!-- Contact Information -->
  
-        <legend>Contact Information:</legend>
+<fieldset class="contact">
  
-        <div class="form-group">
-            <label><b>Email</b></label>
-            <span>:</span>
-            <input type="email">
-        </div>
+<legend>Contact Information:</legend>
  
-        <div class="form-group">
-            <label><b>Phone/Mobile</b></label>
-            <span>:</span>
-            <input type="text">
-        </div>
+<table>
  
-        <div class="form-group">
-            <label><b>Website</b></label>
-            <span>:</span>
-            <input type="text">
-        </div>
+<tr>
+<td><b>Email</b></td>
+<td>:</td>
+<td><input type="email"></td>
+</tr>
  
-        <div class="form-group">
+<tr>
+<td><b>Phone/Mobile</b></td>
+<td>:</td>
+<td><input type="text"></td>
+</tr>
  
-            <label><b>Address</b></label>
-            <span>:</span>
+<tr>
+<td><b>Website</b></td>
+<td>:</td>
+<td><input type="text"></td>
+</tr>
  
-            <div class="address">
+<tr>
  
-                <fieldset>
+<td valign="top"><b>Address</b></td>
+<td valign="top">:</td>
  
-                    <legend>Present Address</legend>
+<td>
  
-                    <select>
-                        <option>Bangladesh</option>
-                        <option>India</option>
-                    </select>
+<fieldset class="address-box" style="border:2px solid #5b7bc6;">
  
-                    <br>
+<legend>Present Address</legend>
  
-                    <select>
-                        <option>Dhaka</option>
-                        <option>Rangpur</option>
-                    </select>
+<select>
+<option>Bangladesh</option>
+</select>
  
-                    <br>
+<select>
+<option>Dhaka</option>
+</select>
  
-                    <textarea rows="3">Road/Area/City</textarea>
+<br><br>
  
-                    <br>
+<textarea placeholder="Road/Street/City"></textarea>
  
-                    <input type="text" placeholder="Postcode">
+<br><br>
  
-                </fieldset>
+<input type="text" placeholder="Post Code">
  
-            </div>
+</fieldset>
  
-        </div>
+</td>
  
-    </fieldset>
+</tr>
  
-    <div>
+</table>
  
-        <fieldset>
+</fieldset>
  
-            <legend>Account Information:</legend>
+<!-- Account Information -->
  
-            <div class="form-group">
-                <label><b>Username</b></label>
-                <span>:</span>
-                <input type="text">
-            </div>
+<div class="account">
  
-            <div class="form-group">
-                <label><b>Password</b></label>
-                <span>:</span>
-                <input type="password">
-            </div>
+<fieldset>
+    <img src="/Screenshot 2026-07-07 142249.png" class="bg">
  
-            <div class="form-group">
-                <label><b>Confirm Password</b></label>
-                <span>:</span>
-                <input type="password">
-            </div>
+<legend>Account Information:</legend>
  
-        </fieldset>
+<table>
  
-        <div class="button">
-            <input type="button" value="Register">
-        </div>
+<tr>
+<td><b>Username</b></td>
+<td>:</td>
+<td><input type="text"></td>
+</tr>
  
-    </div>
+<tr>
+<td><b>Password</b></td>
+<td>:</td>
+<td><input type="password"></td>
+</tr>
+ 
+<tr>
+<td><b>Confirm Password</b></td>
+<td>:</td>
+<td><input type="password"></td>
+</tr>
+ 
+</table>
+ 
+</fieldset>
+ 
+<button class="register">Register</button>
+ 
+</div>
  
 </div>
  
 </body>
 </html>
+ 

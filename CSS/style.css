@@ -1,62 +1,103 @@
-*{
-    box-sizing:border-box;
-}
- 
 body{
-    margin:20px;
+    margin:0;
+    padding:30px;
+    background:#f3f6fb;
+    
     
 }
  
 h1{
-    margin:0 0 20px 0;
-    font-size:32px;
+    text-align:center;
+    margin-bottom:40px;
+    
 }
  
 .container{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:20px;
-    align-items:start;
-}
- 
-fieldset{
-    padding:15px;
-}
- 
-.form-group{
-    display:grid;
-    grid-template-columns:140px 15px 1fr;
-    align-items:start;
-    margin-bottom:12px;
-}
- 
-.radio-group{
+    width:1250px;
+    margin:auto;
     display:flex;
-    gap:20px;
+    justify-content:space-between;
     align-items:center;
 }
  
-.address{
-    border:1px solid gray;
-    padding:10px;
+fieldset{
+    border:2px solid #5b7bc6;
+    border-radius:10px;
+    padding:20px;
+    margin-right: 20px;
 }
  
-.address select,
-.address textarea,
-.address input{
+
+ 
+.general{
+    width:360px;
+}
+ 
+.contact{
+    width:460px;
+}
+ 
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    z-index: -1;
+
+}
+.account fieldset{
+    position: relative;
+    z-index: 1;
+}
+ 
+table{
     width:100%;
-    margin-top:8px;
+}
+ 
+td{
+    padding:12px 5px;
+    vertical-align:middle;
 }
  
 input[type=text],
-input[type=password],
 input[type=email],
-select,
-textarea{
-    width:100%;
+input[type=password]{
+    width:150px;
+    height:28px;
 }
  
-.button{
-    text-align:center;
-    margin-top:20px;
+select{
+    height:30px;
 }
+ 
+textarea{
+    width:180px;
+    height:90px;
+}
+ 
+.address-box{
+    border:1px solid gray;
+    border-radius:8px;
+    padding:10px;
+}
+ 
+.register{
+    margin-top:15px;
+    width:90px;
+    height:35px;
+    border:none;
+    background:#093ba0;
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #d5d4d4; 
+}
+ 
